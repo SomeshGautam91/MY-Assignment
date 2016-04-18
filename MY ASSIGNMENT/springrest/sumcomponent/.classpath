@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v7.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.utility"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre7">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/asm.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/asm-attrs.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/cglib-2.1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/com.fasterxml.jackson.core.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/com.fasterxml.jackson.databind.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/com.springsource.net.sf.cglib-2.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/com.springsource.org.aopalliance-1.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/com.springsource.org.apache.commons.pool-1.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/com.springsource.org.aspectj.weaver-1.6.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/commons-collections-2.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/commons-dbcp.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/commons-logging-api-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/dsfj-util-1.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/hibernate3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/hibernate-commons-annotations-4.0.5.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/hibernate-core-4.3.7.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/jackson-annotations-2.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/jandex-1.1.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/javassist-3.18.1-GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/jboss-logging-3.1.3.GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/jboss-logging-annotations-1.2.0.Beta1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/jboss-transaction-api_1.2_spec-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/jstl.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/jta.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/mysql-connector-java-5.1.6-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/org.apache.commons.fileupload.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/org.apache.commons.io.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/org.springframework.aspects-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-aop-4.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-aop-4.0.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-aop-4.0.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-aspects-4.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-aspects-4.0.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-aspects-4.0.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-beans-4.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-beans-4.0.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-beans-4.0.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-boot-autoconfigure-1.1.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-boot-starter-web-1.1.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-build-src-4.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-context-4.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-context-4.0.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-context-4.0.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-context-support-4.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-context-support-4.0.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-context-support-4.0.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-core-4.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-core-4.0.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-core-4.0.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-expression-4.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-expression-4.0.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-expression-4.0.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-framework-bom-4.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-framework-bom-4.0.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-framework-bom-4.0.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-instrument-4.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-instrument-4.0.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-instrument-4.0.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-instrument-tomcat-4.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-instrument-tomcat-4.0.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-instrument-tomcat-4.0.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-jdbc-4.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-jdbc-4.0.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-jdbc-4.0.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-jms-4.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-jms-4.0.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-jms-4.0.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-messaging-4.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-messaging-4.0.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-messaging-4.0.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-orm-4.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-orm-4.0.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-orm-4.0.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-oxm-4.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-oxm-4.0.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-oxm-4.0.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-test-4.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-test-4.0.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-test-4.0.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-tx-4.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-tx-4.0.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-tx-4.0.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-web-4.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-web-4.0.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-web-4.0.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-webmvc-4.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-webmvc-4.0.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-webmvc-4.0.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-webmvc-portlet-4.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-webmvc-portlet-4.0.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-webmvc-portlet-4.0.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-websocket-4.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-websocket-4.0.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/spring-websocket-4.0.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/Spring Rest Jars/standard.jar"/>
+	<classpathentry kind="lib" path="C:/Users/somesh.kumar/Desktop/mysql-connector-java-5.0.8-bin.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

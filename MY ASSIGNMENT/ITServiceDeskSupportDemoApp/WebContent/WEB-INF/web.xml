@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>ITServiceDeskSupportDemoApp</display-name>
+  
+  <context-param>
+  	<param-name>Path</param-name>
+  	<param-value>/WEB-INF/config.properties</param-value>
+  </context-param>
+  
+  <servlet>
+    <servlet-name>ServiceController</servlet-name>
+    <servlet-class>com.yash.training.controller.ServiceDeskServlet</servlet-class>
+    <init-param>
+      <param-name>username</param-name>
+      <param-value>root</param-value>
+    </init-param>
+    <init-param>
+      <param-name>password</param-name>
+      <param-value>root</param-value>
+    </init-param>
+    <init-param>
+      <param-name>driverName</param-name>
+      <param-value>com.mysql.jdbc.Driver</param-value>
+    </init-param>
+    <init-param>
+      <param-name>URL</param-name>
+      <param-value>jdbc:mysql://localhost:3306/mydb</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServiceController</servlet-name>
+    <url-pattern>/SC</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ResponseController</servlet-name>
+    <servlet-class>com.yash.training.controller.ResponseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ResponseController</servlet-name>
+    <url-pattern>/RC</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>RegisterController</servlet-name>
+    <servlet-class>com.yash.training.controller.RegisterServlet</servlet-class>
+    <init-param>
+      <param-name>username</param-name>
+      <param-value>root</param-value>
+    </init-param>
+    <init-param>
+      <param-name>password</param-name>
+      <param-value>root</param-value>
+    </init-param>
+    <init-param>
+      <param-name>driverName</param-name>
+      <param-value>com.mysql.jdbc.Driver</param-value>
+    </init-param>
+    <init-param>
+      <param-name>URL</param-name>
+      <param-value>jdbc:mysql://localhost:3306/mydb</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterController</servlet-name>
+    <url-pattern>/REC</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ViewController</servlet-name>
+    <servlet-class>com.yash.training.controller.ViewServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewController</servlet-name>
+    <url-pattern>/VC</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>HeaderController</servlet-name>
+    <servlet-class>com.yash.training.controller.HeaderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HeaderController</servlet-name>
+    <url-pattern>/HC</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>FrontController</servlet-name>
+    <servlet-class>com.yash.training.controller.FrontSevlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FrontController</servlet-name>
+    <url-pattern>/FrontController</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>

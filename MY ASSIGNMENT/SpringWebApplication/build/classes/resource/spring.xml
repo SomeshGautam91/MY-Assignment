@@ -1,0 +1,24 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+	<bean id="UserService" class="com.yash.training.service.UserServiceImplementation" autowire="byName" />
+	<bean id="userDao" class="com.yash.training.dao.UserDaoImplementation" autowire="byName"/>
+	
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations" value="resource/config.properties"/>
+	</bean>
+	
+	
+	
+	<bean id="provider" class="com.yash.training.util.ConnectionProvider">
+		<property name="url" 		value="${db.url}"/>
+		<property name="username" 	value="${db.username}"/>
+		<property name="password" 	value="${db.password}"/>
+		<property name="driverName" value="${db.driverName}"/>
+	</bean>
+	
+	
+
+</beans>

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="com.yash.simpleapplicationusinghibernate.model.Student"
+		table="student">
+		<id name="studentId" column="studentId">
+			<generator class="increment" />
+		</id>
+		<property name="name" />
+		<set name="books" cascade="all"  >
+			<key column="studentId" />
+			<one-to-many class="com.yash.simpleapplicationusinghibernate.model.Book" />
+		</set>
+		
+		<list name="certificates" cascade="all" >
+			<key column="studentId"/>
+			<list-index column="position" />
+			
+			<one-to-many class="com.yash.simpleapplicationusinghibernate.model.Certificates"/>
+		</list>
+		
+		 <map name="studentAddress" cascade="all">
+         	<key column="studentId"/>
+         	<index column="addressType" type="string"/>
+ 			<one-to-many class="com.yash.simpleapplicationusinghibernate.model.StudentAddress"/>
+        </map>
+		
+
+	</class>
+
+	<class name="com.yash.simpleapplicationusinghibernate.model.Book" table="book">
+		<id name="bookId" column="bookId">
+			<generator class="increment"></generator>
+		</id>
+		<property name="name" />
+		<property name="author"></property>
+	</class>
+	
+	<class name="com.yash.simpleapplicationusinghibernate.model.Certificates" table="certificates">
+		<id name="id" column="certificates_id">
+			 <generator class="increment"></generator>
+		</id>
+		<property name="name"/>	
+	
+	</class>
+	
+	<class name="com.yash.simpleapplicationusinghibernate.model.StudentAddress" table="studentaddress">
+		<id name="address_id" column="address_id">
+			 <generator class="increment"></generator>
+		</id>
+		<property name="city"/>
+		<property name="state"/>
+		<property name="zip"/>	
+	</class>
+	
+
+
+
+
+</hibernate-mapping>  

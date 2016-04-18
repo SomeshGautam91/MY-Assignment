@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#basic").show();
+    $("#middle").hide();
+    $("#final").hide();
+    $(".type2").fadeTo("fast", 0.15);
+    $(".type3").fadeTo("fast", 0.15);
+    
+    $("#link1").click(function(){
+    	
+    	$(".type1").fadeTo("fast", 0.15);
+    	$(".type2").fadeTo("fast",0.7);
+    	$(".type3").fadeTo("fast", 0.15);
+    	$("#basic").hide();
+        $("#middle").show();
+        $("#final").hide();
+    });
+    
+    $("#link2").click(function(){
+    	$(".type1").fadeTo("fast", 0.15);
+    	$(".type2").fadeTo("fast",0.15);
+    	$(".type3").fadeTo("fast",0.7);
+    	$("#basic").hide();
+        $("#middle").hide();
+        $("#final").show();
+    });
+});
+</script>
+<style>
+.circleBase {
+
+    border-radius: 50%;
+    text-align:center;
+   
+}
+
+.type1 {
+	margin-left:5%;
+	margin-top:10%;
+    width: 50px;
+    float:left;
+    height: 50px;
+    background: red;
+    border: 3px solid black;
+}
+.type2 {
+	margin-left:5%;
+	margin-top:10%;
+    width: 50px;
+    float:left;
+    height: 50px;
+    background: red;
+    border: 3px solid black;
+}
+.type3{
+	margin-left:5%;
+	margin-top:10%;
+    width: 50px;
+    float:left;
+    height: 50px;
+    background: red;
+    border: 3px solid black;
+}
+.line
+{
+	margin-left:4%;
+	margin-top:12%;
+	float:left;
+	height:2px;
+	width:250px;
+	background:black;
+	border:3px solid black;
+
+}
+.header
+{
+margin-left:42%;
+margin-top:2%;
+float:left;
+text-align:center;
+skip:both;
+
+}
+#main
+{
+	position:relative;
+	border:1px;
+	border-style:solid;
+	border-color:black;
+	float:left;
+	background-color:#ff9933;
+	align:center;
+	text-align:center;
+	height:150px;
+	width:250px;
+	margin-left:35%;
+	
+
+
+}
+
+
+</style>
+</head>
+<body>
+<div class="circleBase type1"></div>
+<div class="line"></div>
+<div class="circleBase type2"></div>
+<div class="line"></div>
+<div class="circleBase type3"></div>
+<div class="header"><h3>User Registration</h3></div>
+<div id="main">
+<form action="US">
+     
+     <div id="basic">
+     <table  align="center">
+	
+				<tr>
+	   				<td>Name</td>
+	   				<td> <input type="text" name="username" id="username"/> </td>
+				</tr>
+	
+	
+				<tr>
+	   				<td>Mobile NO</td>
+	  				<td> <input type="text" name="mobileno" id="mobileno"/> </td>
+				</tr>
+
+				<tr>
+	   				<td>Date of Birth</td>
+	   				<td> <input type="text" name="dob" id="dob"/> </td>
+				</tr>
+	
+				<tr>
+	   				<td>Email</td>
+	   				<td> <input type="text" name="email" id="email"/> </td>
+				</tr>
+	
+				<tr>
+	   				<td></td>
+	   				<td><input type="button" value="Next>>" id="link1"  /></td>
+	   
+				</tr>
+				
+				
+				
+	</table>
+
+	</div>
+	
+	<div id="middle">
+	<table  align="center">
+	
+				<tr>
+	   				<td>Street</td>
+	   				<td> <input type="text" name="street" id="street"/> </td>
+				</tr>
+	
+	
+				<tr>
+	   				<td>City</td>
+	   				<td> <input type="text" name="city" id="city"/> </td>
+				</tr>
+
+				<tr>
+	   				<td>Home No</td>
+	   				<td> <input type="text" name="houseno" id="houseno"/> </td>
+				</tr>
+	
+				<tr>
+	   				<td></td>
+	  				<td><input type="button" value="Next>>" id="link2" /></td>
+	   
+				</tr>
+	</table>
+
+	</div>
+	
+	<div id="final">
+    <table  align="center">
+	
+				<tr>
+	   				<td>Username</td>
+	   				<td> <input type="text" name="username" id="username"/> </td>
+				</tr>
+	
+	
+				<tr>
+	   				<td>Password</td>
+	   				<td> <input type="password" name="password" id="password"/> </td>
+				</tr>
+
+				<tr>
+	   				<td></td>
+	   				<td><input type="submit" value="Save" id="link3" /></td>
+	   
+				</tr>
+    </table>
+	</div>
+	
+</form>	
+
+</div>	
+</body>
+</html>

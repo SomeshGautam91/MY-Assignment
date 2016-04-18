@@ -1,0 +1,281 @@
+/*
+* {
+	border: 1px solid black;
+}
+
+* * {
+	border: 1px solid red;
+}
+
+* * *{
+	border: 1px solid green;
+}
+*/
+.navheight{
+ height: 5px;
+}
+
+.footerheight{
+ height: 110px;
+}
+
+.headerheight{
+ height: 110px;
+}
+
+.bodyheight{
+ height: 520px;
+  /*  overflow: auto;*/
+}
+
+.footer{
+	background-color:#e7e8e8;
+	font-size:13px;
+	font-family:calibri;
+	border-top: 1px groove #000000;
+	border-bottom: 1px groove #000000;
+	padding: 2px 24px 2px 24px;
+	width:100%;
+}
+.footer a{
+	color:#367c2b;
+}
+a img{
+    border: 0;
+}
+
+.header{
+	font-size:20px;
+	font-family:calibri;
+	color:#333333;
+	font-weight:bolder;
+	padding: 2px 24px 2px 24px;
+}
+
+.sub_header{
+	font-size:14px;
+	font-family:calibri;
+	color:#333333;
+	font-weight: bold;
+}
+.normal_text{
+	font-size:13px;
+	font-family:calibri;
+	color:#333333;
+}
+
+.button{
+	font-size:14px;
+	font-family:calibri;
+	color:#333333;
+	font-weight: bold;
+	height: 28px;
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+.small_button{
+	font-size:12px;
+	font-family:calibri;
+	color:#333333;
+	font-weight: bold;
+	height: 21px;
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+.sample_header{
+	height:1000px;
+	width: 100%;
+	background-color: red;
+}
+
+.table{
+	width:100%;
+	border-spacing:0;
+  	border-collapse:collapse;
+}
+.vert_line{
+ 	width:1px;
+ 	height:1px;
+	background:url('../images/vertical_line.gif');
+	align:left;
+}
+.menu_table{
+	width:95%;
+	border:0;
+	border-spacing:0;
+  	border-collapse:collapse;
+}
+
+.td_label{
+	font-size:13px;
+	font-family:calibri;
+	color:#333333;
+	 width:10%;
+	 align:left;
+	 valign:top;
+}
+
+.td_input{
+	font-size:13px;
+	font-family:calibri;
+	color:#333333;
+	 width:15%;
+	 align:left;
+	 valign:top;
+}
+.note{
+	font-size:13px;
+	font-family:calibri;
+	color:#333333;
+	font-style: italic;
+}
+.dataTable_show_entries{
+	 width:50px;
+}
+.headerGradient{
+	background: linear-gradient(to bottom, #FFFFFF, #E5E6E6);
+}
+.fixedDiv{
+	overflow: auto;
+	height: 400px;
+}
+.asterisk{
+	vertical-align:top;
+	color:red;
+	font-weight: bold;
+}
+.viewElemDiv{
+	overflow: auto;
+	height: 520px;
+}
+
+.readonly{
+	background: #EBEBE4;
+	border: 2px groove;
+	border-color: #EBEBE4;
+	color:#555454;
+}
+
+.subsystemTextArea{
+	width: 100%;
+	height: 400px;
+}
+
+.step{
+	display:none;
+	border:2px solid;
+	border-radius:5px;
+	margin:5px;
+	height:400px;
+}
+.rule{
+	font-size:13px;
+	font-family:calibri;
+	color:#333333;
+	width: 80%;
+}
+
+.stepcontent{
+	font-family:calibri;
+}	
+.error_msg{
+	font-size:14px;
+	font-family:calibri;
+	color:red;
+	font-weight: bold;
+}
+
+table.dataTableClass tr.odd { background-color: #e5e6e6; }
+table.dataTableClass tr.even { background-color: white; }
+
+table.dataTableClass thead th {
+	border-bottom: 1px solid black;
+	text-align: left;
+	font-size:16px;
+	font-family:calibri;
+	font-weight: bold;
+	color: white;
+	background-color: #387D3C;
+}
+
+#parentTable fieldset{
+	background-color: #F8F8F8;
+}
+.divOverview{
+	border: 1px solid; 
+	BACKGROUND-COLOR:white;
+	OVERFLOW: auto;
+	WIDTH: 100%;
+	Height : 100px; 
+	font-family: calibri;
+	font-size: 11px;
+}
+
+.inputDiv{
+	-moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    background-color: white;
+    background-color: -moz-field;
+    border: 1px solid darkgray;
+    box-shadow: 1px 1px 1px 0 lightgray inset;  
+    font: -moz-field;
+    font: -webkit-small-control;
+    margin-top: 5px;
+    padding: 2px 3px;
+    width: 398px; 
+    font-size:13px;
+	font-family:calibri;
+	color:#333333;
+	font-weight: bold;
+}
+
+.userContext {
+ float:right;	
+ cursor: pointer;
+ font-size:15px;
+ font-family:calibri;
+ color:#333333;
+ text-align: right;
+}
+
+.userContext div :hover{
+    background-color: #E3E3E3;
+}
+
+.userContext div {
+	padding:5px 5px;
+	word-wrap: break-word; 
+}
+
+.userContext hr {
+  border-top: 1px dashed;
+}
+
+.userContextDetails {
+	 background: white;
+	 border: 5px solid rgba(0,0,0,0.2);
+	 background-clip: padding-box;
+	 position: absolute;
+	 z-index: 110;
+	 font-size:13px;
+	 font-family:calibri;
+	 color:#333333;
+	 width: 15%;
+	 text-align: left;
+	 display: inline-block;
+	 word-wrap: break-word; 
+}
+
+.uomTextArea{
+	height: 35px;
+	width: 30%;
+	font-family: calibri;
+}
+
+.error{ 
+font:18px sans-serif bold; 
+color:#FF0000; 
+background:#ffc; 
+} 

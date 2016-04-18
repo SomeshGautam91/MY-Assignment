@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+      xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+      xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/mvc
+                           http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+  
+  
+ <context:component-scan base-package="com.yash" />
+  <mvc:annotation-driven />
+ 
+ <!-- Property read -->
+ <context:property-placeholder location="WEB-INF/DB.properties" />
+ 
+ <!-- Intercepter -->
+ <mvc:interceptors>
+    
+   <bean class="com.yash.interceptor.MaintenanceInterceptor" />
+ </mvc:interceptors>
+ 
+ 
+  <!-- Error property set -->
+  <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+  <property name="basename" value="/WEB-INF/errormessage"></property>
+   </bean>
+   
+   
+  <!-- View Resolver -->
+  <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+     <property name="prefix" value="/WEB-INF/views/" />
+     <property name="suffix" value=".jsp" />
+   </bean>
+ 
+ <!-- Connection Provider -->  
+ 
+<!--  <bean class="org.springframework.beans.factory.config.PreferencesPlaceholderConfigurer"> -->
+<!--   <property name="Location" value="WEB-INF/DB.properties"></property> -->
+<!-- </bean> -->
+
+<!-- <bean id="connectionProvider" class="com.yash.utility.ConnectionProvider" > -->
+<!--   <property name="driver" value="${drivername}"></property> -->
+<!--   <property name="url" value="${url}"></property> -->
+<!--   <property name="username" value="${username}"></property> -->
+<!--   <property name="password" value="${pass}"></property> -->
+<!-- </bean> -->
+
+<!-- DataSource -->
+   <bean class="org.apache.commons.dbcp.BasicDataSource" id="dataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/test" />
+		<property name="username" value="root" />
+		<property name="password" value="root" />
+	</bean>
+	
+<!-- JDBC Template -->	
+    <bean class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate" id="namedParameterJdbcTemplate">  
+  		 <constructor-arg ref="dataSource"/> 
+	</bean>  
+	
+	
+
+</beans>

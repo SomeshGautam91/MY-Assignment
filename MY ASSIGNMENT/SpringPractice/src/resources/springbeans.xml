@@ -1,0 +1,18 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans.dtd">
+	<beans>
+<!-- 		<bean id="test" class="com.yash.training.beans.Test"/> -->
+		<bean id="user" class="com.yash.training.beans.User">
+			<property name="userId" value="100"/>
+			<property name="name" value="somesh"/>
+			<property name="homeAddress" ref="homeAddress"/>
+		
+		</bean>
+		
+		<bean id="homeAddress" class="com.yash.training.beans.Address">
+			<property name="street" value="Mawana Road"/>
+			<property name="city" value="Meerut"/>
+			<property name="pin" value="25001"/>
+			
+		</bean>
+	</beans>

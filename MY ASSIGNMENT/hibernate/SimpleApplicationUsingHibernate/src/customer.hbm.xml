@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  
+  <!-- <class name="com.yash.simpleapplicationusinghibernate.model.Address" table="address">
+  	<id name="id">
+  		<generator class="increment"></generator>
+  	</id>
+  	<property name="city"/>
+  	<property name="state"/>
+  	<property name="zip"/>
+  </class> -->
+  
+  <class name="com.yash.simpleapplicationusinghibernate.model.Customer" table="customer">
+    <meta attribute="class-description">
+         This class contains the customer detail. 
+    </meta>  
+    <id name="id" type="int" >  
+		<generator class="increment"></generator>  
+    </id>  
+    <property name="name" /> 
+     <component name="address" class="com.yash.simpleapplicationusinghibernate.model.Address">
+         <property name="city" />
+         <property name="state" />
+         <property name="zip" />
+      </component>
+      <one-to-one name="vehicle" cascade="all" constrained="true"></one-to-one>
+  </class>  
+    
+   <class name="com.yash.simpleapplicationusinghibernate.model.Vehicle" table="vehicle">
+   	 <meta attribute="class-description">
+         This class contains the vehicle detail. 
+    </meta> 
+    <id name="id">
+  		<generator class="increment"></generator>
+  	</id> 
+    <property name="type" ></property>
+     <one-to-one name="registration" cascade="all" constrained="true"></one-to-one>
+   </class>         
+            
+   <class name="com.yash.simpleapplicationusinghibernate.model.Registration" table="registration">
+    <meta attribute="class-description">
+         This class contains the vehicle-regisration detail. 
+    </meta> 
+    <id name="id">
+  		<generator class="increment"></generator>
+  	</id> 
+    <property name="registrationCity" ></property>
+   	<property name="registrationState" ></property>
+   	<property name="seriesNo" ></property>
+   
+   </class>       
+            
+            
+            
+ </hibernate-mapping>  

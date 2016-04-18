@@ -1,0 +1,43 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	
+	<!-- <bean id="commonCity" class="com.beans.Address">
+		<property name="city" value="meerut"/>
+	</bean> -->
+	
+	<bean id="permAddress" class="com.yash.training.beans.Address">
+		<property name="houseNo" value="123"/>
+		<property name="street" value="Mawana Road"/>
+		<property name="city" value="meerut"/>
+		
+	</bean> 
+	
+	 	<bean id="comAddress" class="com.yash.training.beans.Address"> 
+		<property name="houseNo" value="123"/>
+		<property name="street" value="Mawana Road"/>
+		<property name="city" value="Meerut"/>
+	
+	</bean>
+	
+	
+	<bean id="user" class="com.yash.training.beans.User" autowire="byName">
+		<property name="name" value="somesh"/>
+	</bean>
+	
+	<bean class="com.yash.training.beans.DisplayNameBeanPostProcessor"/>
+	
+	<bean class="com.yash.training.beans.MyBeanFactory"/>
+
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations" value="resources/spring.properties"/>
+	</bean>
+	
+	<bean id="dataSource" class="com.yash.training.util.ConnectionProvider">
+		<property name="URL" value="${connection.URL}"/>
+		<property name="username" value="${connection.username}"/>
+		<property name="password" value="${connection.password}"/>
+		<property name="driverName" value="${connection.driverName}"/> 
+	</bean> 
+	
+</beans>

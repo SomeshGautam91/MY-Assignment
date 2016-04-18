@@ -1,0 +1,150 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<!-- <bean id="c" class="com.bean.Component" scope="prototype">
+		<property name="tyreManufacturer" value="MRF"></property>
+		<property name="bodyManufacturer" value="Corolla"></property>
+		<property name="glassManufacturer" value="GlassDor"></property>
+   </bean>
+
+
+
+	<bean id="v1" class="com.bean.Vehicle" scope="prototype">
+		<property name="vehicleNo" value="9719"></property>
+		<property name="manufacturer" value="Honda"></property>
+		<property name="color" value="black"></property>
+		<property name="component" ref="c"></property>
+   </bean>
+   
+   <bean id="v2" class="com.bean.Vehicle" scope="prototype">
+		<property name="vehicleNo" value="9720"></property>
+		<property name="manufacturer" value="Honda"></property>
+		<property name="color" value="black-red"></property>
+		<property name="component" ref="c"></property>
+   </bean>
+
+
+	<bean id="t" class ="com.bean.Employee" >
+		<property name="name" value="Somesh"></property>
+		<property name="id" value="123"></property>
+		<property name="Address" ref="a"></property>
+	</bean>
+	
+	<bean id="n1" class="com.bean.NewEmployee" scope="prototype">
+		
+		<constructor-arg value="12345" type="long" />
+		<constructor-arg value="Pradeep" type="String" />
+	    <constructor-arg type="Vehicle" ref="v1" />
+	    
+	</bean>
+
+	<bean id="n2" class="com.bean.NewEmployee" scope="prototype">
+		
+		<constructor-arg value="54321" type="long" />
+		<constructor-arg value="Somesh" type="String" />
+	    <constructor-arg type="Vehicle" ref="v2" />
+	    
+	</bean> -->
+	<bean id="user" class="com.bean.User" autowire-candidate="true" >
+		<property name="userId" value="100"/>
+		<property name="name" value="Somesh"/>
+		<property name="email" value="samkane007@gmail.com"/>
+		<property name="contact" ref="userContact"/>
+		<property name="addressList">
+			<set>
+				<ref bean="permAddress"/>
+				<ref bean="corpAddress"/>
+				<ref bean="comAddress"/>
+				<!-- <ref bean="permAddress"/> -->
+			</set>
+		</property>
+		<property name="vehicles">
+			<map>
+				<entry key="twoWheeler" value-ref="twoWheeler"/>
+				<entry key="fourWheeler" value-ref="fourWheeler"/>
+			</map>
+		</property>
+	</bean>
+	
+	<bean id="newUser" class="com.bean.NewUser" autowire="constructor">
+	
+		<constructor-arg  value="Somesh"/>
+	</bean>
+	
+	
+	
+	
+	
+	
+	<!-- <bean id="user" class="com.bean.User" autowire-candidate="true" autowire="byName">
+		<property name="userId" value="100"/>
+		<property name="name" value="Somesh"/>
+		<property name="email" value="samkane007@gmail.com"/>
+		<property name="contact" ref="userContact"/>
+		<property name="addressList">
+			<list>
+				<ref bean="permAddress"/>	
+				<ref bean="corpAddress"/>
+				<ref bean="comAddress"/>		
+			</list>
+		</property>
+		<property name="vehicles">
+			<list>
+				<ref bean="twoWheeler"/>	
+				<ref bean="fourWheeler"/>
+			</list>
+		</property>
+	</bean> -->
+	<bean id="userContact" class="com.bean.Contact">
+		<constructor-arg value="1001" type="int"/>
+		<constructor-arg value="Pradeep" type="String"/>
+		<constructor-arg value="7385288995" type="long"/>
+	</bean>
+	
+	<bean id="permAddress" class="com.bean.Address">
+		<property name="houseNo" value="123"/>
+		<property name="street" value="Mawana Road"/>
+		<property name="city" value="Meerut"/>
+	</bean>
+	
+	<bean id="corpAddress" class="com.bean.Address">
+		<property name="houseNo" value="94"/>
+		<property name="street" value="Pipliya Rao"/>
+		<property name="city" value="Indore"/>
+	</bean>
+	<bean id="comAddress" class="com.bean.Address">
+		<property name="houseNo" value="STP-1"/>
+		<property name="street" value="Ring Road"/>
+		<property name="city" value="Indore"/>
+	</bean>
+	
+	<bean id="twoWheeler" class="com.bean.TwoWheeler" >
+		<constructor-arg value="9720" type="long"/>
+		<constructor-arg value="honda" type="String"/>
+		<constructor-arg value="126" type="int"/>
+		<constructor-arg value="126" type="int"/>
+		<constructor-arg value="12" type="int"/>
+		<constructor-arg value="Xide" type="String"/>
+    </bean>
+	
+	
+	
+	 <bean id="fourWheeler"  class="com.bean.FourWheeler">
+		<constructor-arg value="9020" type="long"/>
+		<constructor-arg value="Mitsubishi" type="String"/>
+		<constructor-arg value="126" type="int"/>
+		<constructor-arg value="126" type="int"/>
+		<constructor-arg value="5" type="int"/>
+		<constructor-arg value="Powered" type="String"/>
+     </bean>
+	
+	
+	
+	<bean id="c" class="com.bean.Component" scope="prototype">
+		<property name="tyreManufacturer" value="MRF"></property>
+		<property name="bodyManufacturer" value="Corolla"></property>
+		<property name="glassManufacturer" value="GlassDor"></property>
+    </bean>
+	
+	
+</beans>

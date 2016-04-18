@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>GradingSystemDemoApp</display-name>
+  <servlet>
+    <servlet-name>MarksController</servlet-name>
+    <servlet-class>com.yash.training.controller.MarksController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MarksController</servlet-name>
+    <url-pattern>/MC</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DisplayController</servlet-name>
+    <servlet-class>com.yash.training.controller.DisplayServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayController</servlet-name>
+    <url-pattern>/DisplayServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ViewController</servlet-name>
+    <servlet-class>com.yash.training.controller.ViewServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewController</servlet-name>
+    <url-pattern>/VS</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+</web-app>

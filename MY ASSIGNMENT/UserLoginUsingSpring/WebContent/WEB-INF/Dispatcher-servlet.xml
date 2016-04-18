@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/mvc
+                           http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+        
+ <context:component-scan base-package="com.yash.training"/>
+ <mvc:annotation-driven/>
+ 
+ <!-- Handler Interceptor -->
+ 	<mvc:interceptors>
+ 		<mvc:interceptor>
+        	<mvc:mapping path="/user/loginForm.htm"/>
+        	<bean class="com.yash.training.maintainence.MaintainenceInterceptor" />
+    	</mvc:interceptor>
+ 	</mvc:interceptors>
+ 
+ <!--View Resolver  -->
+ 	<bean name="InternalNameViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/view/"/>
+		<property name="suffix" value=".jsp"/>
+ 	</bean>
+ 
+ <!-- reloadable resource Bundle message source  -->
+ 	<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+  		<property name="basenames">
+  			<list>
+  				<value>/WEB-INF/error-message</value>
+  				<value>/WEB-INF/registerInfo</value>
+  			</list>
+  		
+  		</property> 
+ 	
+ 	
+		
+	</bean>
+ 	
+ 	
+ 	
+
+<!-- Property Place holder -->  
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations" value="/WEB-INF/config.properties"/>
+	</bean>
+	
+	
+	
+	<bean id="provider" class="com.yash.training.util.ConnectionProvider">
+		<property name="url" 		value="${db.url}"/>
+		<property name="username" 	value="${db.username}"/>
+		<property name="password" 	value="${db.password}"/>
+		<property name="driverName" value="${db.driverName}"/>
+	</bean>
+        
+<!-- DataSource Configuration    -->
+
+<bean class="org.apache.commons.dbcp.BasicDataSource" id="dataSource">
+	<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+	<property name="url"             value="jdbc:mysql://YITRNG30DT:3306/user-database"/>
+	<property name="username"        value="prajvi"/>
+	<property name="password"        value="prajvi"/>
+
+</bean>
+
+ <!-- JDBC Template  -->
+ 
+ <bean class="org.springframework.jdbc.core.JdbcTemplate" id="jdbcTemplate">
+ 	<constructor-arg ref="dataSource"/>
+ </bean>     
+
+        
+</beans>
